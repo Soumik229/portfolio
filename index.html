@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soumik Kuila | Portfolio</title>
+  <style>
+    :root {
+      --accent: #f39c12;
+      --bg: #f4f4f4;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      background: var(--bg);
+      color: #111
+    }
+
+    header {
+      background: #0b1724;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      gap: 12px;
+      padding: 14px;
+      align-items: center
+    }
+
+    .nav .brand {
+      font-weight: 700;
+      letter-spacing: 0.3px
+    }
+
+    .nav a {
+      color: #cfe8ff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px
+    }
+
+    .nav a:hover {
+      background: rgba(255, 255, 255, 0.03)
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 0 18px
+    }
+
+    .hero {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      background: var(--card);
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06)
+    }
+
+    .hero img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 4px solid #fff;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08)
+    }
+
+    h1 {
+      margin: 0 0 6px
+    }
+
+    .muted {
+      color: #44566a
+    }
+
+    section {
+      margin-top: 22px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px
+    }
+
+    .card {
+      background: var(--card);
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05)
+    }
+
+    footer {
+      background: #0b1724;
+      color: #fff;
+      padding: 28px;
+      margin-top: 28px
+    }
+
+    footer a {
+      color: var(--accent)
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none
+    }
+
+    .projects a {
+      color: var(--accent)
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 8px
+    }
+
+    form button {
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer
+    }
+
+    .small {
+      font-size: 0.9rem;
+      color: #556677
+    }
+
+    @media (max-width:720px) {
+      .hero {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .hero img {
+        margin: 0
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="brand">Soumik Kuila</div>
+      <nav style="margin-left:auto">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#cv">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <img src="profile.jpg" alt="Soumik Kuila">
+      <div>
+        <h1>Soumik Kuila</h1>
+        <div class="small muted">3rd Year BCA Student — Brainware University</div>
+        <p class="muted">I build web applications and data projects. Currently exploring full-stack development and data
+          science with practical projects in Node.js, MongoDB, and Python.</p>
+        <p>Email: <a href="mailto:soumikkuila229@gmail.com">soumikkuila229@gmail.com</a></p>
+        <p>
+          <a href="https://www.linkedin.com/in/soumik-kuila-3b83932a0" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/Soumik229" target="_blank">GitHub</a>
+        </p>
+        <p><a class="btn" href="#projects">See Projects</a></p>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div>
+          <h3>Languages</h3>
+          <p>C, Java, Python</p>
+        </div>
+        <div>
+          <h3>Web</h3>
+          <p>HTML, CSS, JavaScript, PHP, Node.js, Tailwind</p>
+        </div>
+        <div>
+          <h3>Databases & Tools</h3>
+          <p>MySQL, MongoDB, Google Maps API</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid projects">
+        <div class="card">
+          <h3>OxyBlood</h3>
+          <p>Emergency Blood and Oxygen Booking System — front-end with HTML/CSS/JS (Tailwind) and backend using Node.js
+            + MongoDB. Integrates Google Maps for nearby suppliers.</p>
+        </div>
+        <div class="card">
+          <h3>Personal Portfolio</h3>
+          <p>My personal portfolio website built with HTML, CSS and JavaScript to showcase projects and skills.</p>
+        </div>
+        <div class="card">
+          <h3>Data Science with EDA on IPL 2024</h3>
+          <p>Exploratory Data Analysis and visualizations on the IPL 2024 dataset (multiple charts & insights).</p>
+          <p><a href="https://colab.research.google.com/drive/1s5oe0xpcLoLFOYT3jz9j1k1j0zTR-otC?usp=sharing"
+              target="_blank">Open Colab Notebook</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="card">
+      <h2>Resume / CV</h2>
+      <p>Download my CV below:</p>
+      <p><a href="SOUMIK_KUILA_CV.pdf" download>Download CV (PDF)</a></p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div style="max-width:1100px; margin:0 auto; display:flex; gap:30px; flex-wrap:wrap">
+      <div style="flex:1; min-width:280px">
+        <h3>Contact Me</h3>
+        <form id="contactForm">
+          <input type="text" id="visitorName" placeholder="Your Name" required />
+          <input type="email" id="visitorEmail" placeholder="Your Email" required />
+          <input type="text" id="visitorPhone" placeholder="Your Contact Number" required />
+          <button type="submit">Send</button>
+        </form>
+        <div id="formMsg" style="margin-top:10px"></div>
+      </div>
+
+      <div style="flex:1; min-width:260px">
+        <h3>Let's Connect</h3>
+        <p class="small">Email: <a href="mailto:soumikkuila229@gmail.com">soumikkuila229@gmail.com</a></p>
+        <p class="small">LinkedIn: <a href="https://www.linkedin.com/in/soumik-kuila-3b83932a0" target="_blank">Soumik
+            Kuila</a></p>
+        <p class="small">GitHub: <a href="https://github.com/Soumik229" target="_blank">Soumik229</a></p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:18px; color:#cfe8ff;">&copy; 2025 Soumik Kuila</div>
+  </footer>
+
+  <script>
+    // Smooth scroll for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Simple contact form demo: store entries in localStorage and show confirmation
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('visitorName').value.trim();
+      const email = document.getElementById('visitorEmail').value.trim();
+      const phone = document.getElementById('visitorPhone').value.trim();
+      const entry = { name, email, phone, time: new Date().toISOString() };
+      const db = JSON.parse(localStorage.getItem('visitor_contacts') || '[]');
+      db.push(entry);
+      localStorage.setItem('visitor_contacts', JSON.stringify(db));
+      document.getElementById('formMsg').innerText = `Thanks ${name}! Your details have been recorded.`;
+      form.reset();
+    });
+  </script>
+
+</body>
+
+</html>
